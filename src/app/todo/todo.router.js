@@ -1,7 +1,7 @@
-const todoRouter = require("express").Router()
+const todoRouter = require("express").Router();
 const todoCtrl = require("./todo.controller")
 
 todoRouter.get("/todo",todoCtrl.createTask)
-todoRouter.post("/:id",todoCtrl.listAllTodoById)
+todoRouter.post("/:id",todoCtrl.listAllTaskById)
 
-module.exports= todoRouter
+module.exports = todoRouter

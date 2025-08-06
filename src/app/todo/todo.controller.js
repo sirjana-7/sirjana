@@ -7,7 +7,7 @@ class todoController{
         })
     }
 
-    listAllTodoById(req,res,next){
+    listAllTaskById(req,res,next){
         const params = req.params
         res.json({
             data:params,
